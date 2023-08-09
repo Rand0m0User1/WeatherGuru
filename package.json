@@ -1,0 +1,18 @@
+{
+  "name": "weatherguru",
+  "version": "1.0.0",
+  "description": "Custom-made weather application using the openweather API",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
