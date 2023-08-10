@@ -7,17 +7,10 @@
     }
   ],
   "routes": [
-    {
-      "src": "/api/key",
-      "dest": "index.js"
-    },
-    {
-      "src": "/public/(.*)",
-      "dest": "public/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "index.js"
-    }
+    { "src": "/api/key", "dest": "index.js" },
+    { "src": "/css", "dest": "index.js" },
+    { "src": "/javascript", "dest": "index.js" },
+    { "src": "/", "dest": "index.js" },
+    { "src": "/public/(.*)", "dest": "public/$1" }
   ]
 }
