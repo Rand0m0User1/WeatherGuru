@@ -3,6 +3,8 @@ const app = express();
 const dotenv = require('dotenv');
 dotenv.config();
 
+app.use(express.static('public'));
+
 app.get('/api/key', (req, res) => {
   res.json({ api_key: process.env.CLIENT_ID || '' });
 });
