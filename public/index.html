@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable= yes">
+    <title>WeatherGuru</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <noscript> Enable JavaScript to run this app </noscript>
+    <header 
+        id="home"> WeatherGuru
+    </header>
+    <main class="fade">
+        <form>
+            <input type="text" placeholder="Enter City...">
+            <ul></ul>
+        </form>
+        <div id="date_time">
+        </div>
+        <div id="weatherContainer">
+            <img id="icon">
+            <h1 id="city"></h1>
+            <button id="change">change city</button>
+            <h1 id="desc"></h1>
+            <h2 id="degrees"></h2>
+            <div class="tempinfo">
+                <div>
+                    <h3>High</h3>
+                    <div id="maxValue" class="value"><span></span></div>
+                </div>
+                <div>
+                    <h3>Low</h3>
+                    <div id="minValue" class="value"><span></span></div>
+                </div>
+            </div>
+            <div class="winfo">
+                <div>
+                    <h3>Wind</h3>
+                    <div id="windValue" class="value"><span></span></div>
+                </div>
+                <div>
+                    <h3>Feels Like</h3>
+                    <div id="feelsLikeValue" class="value"><span></span></div>
+                </div>
+                <div>
+                    <h3>Humidity</h3>
+                    <div id="humidityValue" class="value"><span></span></div>
+                </div>
+            </div>
+        </div>
+        <h2 id="forecastTitle">5 Day Forecast</h2>
+        <div id="weatherforecastContainer">
+            <div>
+                <h3 id="day1"></h3>
+                <div class="image"><img class="imgClass" id="img1"></div>
+                <p class="forecastminValue" id="day1min"></p>
+                <p class="forecastmaxValue" id="day1max"></p>
+            </div>
+            <div>
+                <h3 id="day2"></h3>
+                <div class="image"><img class="imgClass" id="img2"></div>
+                <p class="forecastminValue" id="day2min"></p>
+                <p class="forecastmaxValue" id="day2max"></p>
+            </div>
+            <div>
+                <h3 id="day3"></h3>
+                <div class="image"><img class="imgClass" id="img3"></div>
+                <p class="forecastminValue" id="day3min"></p>
+                <p class="forecastmaxValue" id="day3max"></p>
+            </div>
+            <div>
+                <h3 id="day4"></h3>
+                <div class="image"><img class="imgClass" id="img4"></div>
+                <p class="forecastminValue" id="day4min"></p>
+                <p class="forecastmaxValue" id="day4max"></p>
+            </div>
+            <div>
+                <h3 id="day5"></h3>
+                <div class="image"><img class="imgClass" id="img5"></div>
+                <p class="forecastminValue" id="day5min"></p>
+                <p class="forecastmaxValue" id="day5max"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 WeatherGuru</p>
+    </footer>
+    <script src=" https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html>
