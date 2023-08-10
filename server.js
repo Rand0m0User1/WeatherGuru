@@ -4,16 +4,10 @@ const dotenv = require('dotenv');
 const path = require('path');
 dotenv.config();
 
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', '/index.html'))
-});
-
-app.get('/css', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', '/styles.css'))
-});
-
-app.get('/javascript', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', '/weather.js'))
+  res.sendFile(path.join(__dirname, 'public/index.html'))
 });
 
 app.get('/api/key', (req, res) => {
