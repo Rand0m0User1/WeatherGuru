@@ -13,11 +13,7 @@
     },
     {
       "src": "/public/(.*)",
-      "dest": "/public/$1"
-    },
-    {
-      "src": "/(.*\\.(json|js|css|png|jpg|jpeg|gif|ico|svg))",
-      "dest": "/public/$1"
+      "dest": "public/$1"
     },
     {
       "src": "/(.*)",
