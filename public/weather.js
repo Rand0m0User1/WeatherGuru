@@ -1,6 +1,6 @@
 let key;
 
-const keyPromise = fetch('/api/key')
+const keyPromise = fetch('https://weather-guru-lilac.vercel.app/api/key')
   .then(response => response.json())
   .then(data => {
     return data.api_key;
