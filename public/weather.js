@@ -40,7 +40,6 @@ async function search() {
     }
 }
 
-// Lodash debounce function
 const debouncedSearch = _.debounce(() => {
     search();
 }, 500);

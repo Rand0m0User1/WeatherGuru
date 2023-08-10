@@ -61,16 +61,7 @@ header {
     font-size: 2.1rem;
     text-shadow: 3px 3px rgba(50,50,70,.2);
     cursor: pointer;
-    /*transform: translateX(-98%);
-    transition: transform 0.3s ease;
-    */
 }
-
-/*
-header:hover {
-    transform: translateX(0);
-}
-*/
 
 form, #weatherContainer {
     display: block;
@@ -195,8 +186,6 @@ div.winfo .value span{
     margin-left: 3px;
 }
 
-/* -------------- */
-
 h2 {
     font-size: 2rem;
     text-align: center;
@@ -221,8 +210,6 @@ h2 {
 #weatherforecastContainer p {
     font-size: 1rem;
 }
-
-/* -------------- */
 
 footer {
     position: absolute;
