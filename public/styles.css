@@ -18,6 +18,10 @@ body {
     color: #fff;
 }
 
+.wrapper {
+    flex: 1;
+    overflow: auto;
+}
 
 .fade-in {
     animation: fade-in 1.5s ease forwards;
@@ -218,9 +222,6 @@ h2 {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     padding: 10px;
     text-align: right;
 }
