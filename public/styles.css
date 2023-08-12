@@ -8,8 +8,12 @@
 }
 
 body {
-    font-family: 'REM', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 100vh;
+    margin: 0;
+    font-family: 'REM', sans-serif;
     background: linear-gradient(to bottom, #313131, #222);
     color: #fff;
 }
@@ -198,13 +202,15 @@ h2 {
     margin: 50px auto;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 5px;
 }
 
 #weatherforecastContainer h3 {
     font-size: .8rem;
     letter-spacing: 1px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 #weatherforecastContainer p {
@@ -212,7 +218,7 @@ h2 {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     padding: 10px;
